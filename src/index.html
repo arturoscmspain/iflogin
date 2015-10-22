@@ -26,79 +26,83 @@
             </div>
         </div>
     </header>
-    <section id="hero">
+    <section id="hero" class="hero-wrapper">
     <!-- El data-position hace referencia a la posición vertical del background y puede incluir una de las palabras clave: center, top, bottom, o un % -->
     <!-- El data-ratio hace referencia al ratio del hero. Podemos utilizar 'third', para utilizar una image de 3/4; o 'full' para una imagen con una altura del 100% -->
         <div class="hero" data-position="25%" data-ratio="full">
-            <div class="modal-form-login-wrapper">
-               <h1>Bienvenido a Inmofactory</h1>
-               <div>
-                    <form id="formLogin" action="">
-                        <section id="login">
-                            <div class="imf-searcher_filter">
-                                <input type="text" name="username" id="username" required="">
-                                <label class="lb-hide" for="username">Nombre usuario</label>
-                            </div>
-                            <label id="usernameError" class="error">(*) Introduce nombre de usuario</label>
-                            <div class="imf-searcher_filter">
-                                <input type="text" name="password" id="password" required="">
-                                <label class="lb-hide" for="password" type="password">Contraseña</label>
-                            </div>
-                            <label id="passwordError" class="error">(*) Introduce la contraseña</label>
+            <div class="modal-form-login-container">
+                <div class="modal-form-login-wrapper">
+                   <h1>Bienvenido a Inmofactory</h1>
+                   <div>
+                        <form id="formLogin" action="">
+                            <section id="login">
+                                <div class="imf-searcher_filter">
+                                    <input type="text" name="username" id="username" required="">
+                                    <label class="lb-hide" for="username">Nombre usuario</label>
+                                </div>
+                                <label id="usernameError" class="error">(*) Introduce nombre de usuario</label>
+                                <div class="imf-searcher_filter">
+                                    <input type="text" name="password" id="password" required="">
+                                    <label class="lb-hide" for="password" type="password">Contraseña</label>
+                                </div>
+                                <label id="passwordError" class="error">(*) Introduce la contraseña</label>
+                                <div class="imf-searcher_filter--inline">
+                                    <input type="checkbox" class="imf_input--inline" name="chk_remember" id="chk_remember">
+                                    <label id="lbl_remember" for="chk_remember">Recordarme en este equipo</label>
+                                </div>
+                                <div class="imf-searcher_filter imf-searcher_filter--inline imf-searcher_button">
+                                    <button id="btn_enter" class="button_primary" style="width: 100%">Entrar en Inmofactory</button>
+                                </div>
+                            </section>
+
                             <div class="imf-searcher_filter--inline">
-                                <input type="checkbox" class="imf_input--inline" name="chk_remember" id="chk_remember">
-                                <label id="lbl_remember" for="chk_remember">Recordarme en este equipo</label>
+                                <a href="#" id="rememberPassword">¿Has olvidado tu contraseña?</a>
                             </div>
-                            <div class="imf-searcher_filter imf-searcher_filter--inline imf-searcher_button">
-                                <button id="btn_enter" class="button_primary" style="width: 100%">Entrar en Inmofactory</button>
-                            </div>
-                        </section>
 
-                        <div class="imf-searcher_filter--inline">
-                            <a href="#" id="rememberPassword">¿Has olvidado tu contraseña?</a>
-                        </div>
-
-                        <section id="panelRemember" class="imf-searcher_filter--inline remember">
-                            <p id="forgetPassword" class=""><strong>Si has olvidado tu contraseña</strong>, escribe tu nombre de usuario en el formulario y pulsa el botón <strong>"Enviar"</strong>. El sistema te enviará automáticamente el recordatorio de tu contraseña a tu cuenta de correo.
-                            </p>
-                            <div class="imf-searcher_filter">
-                                <input type="text" name="usernameRemember" id="usernameRemember">
-                                <label class="lb-hide" for="usernameRemember">Nombre de usuario</label>
-                            </div> 
-                            <label id="usernameRememberError" class="error">(*) Introduce el nombre de usuario</label>
-                            <p>Ejemplo: juan.lopez@inmofactory.com, pedroinmo</p>
-                            <div class="imf-searcher_filter imf-searcher_filter--inline imf-searcher_button">
-                                <button id="btn_sendEmail" class="button_primary" style="width: 100%">Enviar</button>
-                            </div>
-                        </section>   
-                    </form>
-               </div>
+                            <section id="panelRemember" class="imf-searcher_filter--inline remember">
+                                <p id="forgetPassword" class=""><strong>Si has olvidado tu contraseña</strong>, escribe tu nombre de usuario en el formulario y pulsa el botón <strong>"Enviar"</strong>. El sistema te enviará automáticamente el recordatorio de tu contraseña a tu cuenta de correo.
+                                </p>
+                                <div class="imf-searcher_filter">
+                                    <input type="text" name="usernameRemember" id="usernameRemember">
+                                    <label class="lb-hide" for="usernameRemember">Nombre de usuario</label>
+                                </div> 
+                                <label id="usernameRememberError" class="error">(*) Introduce el nombre de usuario</label>
+                                <p>Ejemplo: juan.lopez@inmofactory.com, pedroinmo</p>
+                                <div class="imf-searcher_filter imf-searcher_filter--inline imf-searcher_button">
+                                    <button id="btn_sendEmail" class="button_primary" style="width: 100%">Enviar</button>
+                                </div>
+                            </section>   
+                        </form>
+                   </div>
+                </div>
             </div>
+            <footer class="footer">
+                <div class="footer-wrapper">
+                    <div class="footer-corporate">
+                        <ul class="footer-corporate-portals">
+                            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAvCAIAAAAq4N6eAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0MTAzMDMwNjFEQjExRTU4QkRGOUU3NDdDNkM5MzQzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ0MTAzMDMxNjFEQjExRTU4QkRGOUU3NDdDNkM5MzQzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDQxMDMwMkU2MURCMTFFNThCREY5RTc0N0M2QzkzNDMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDQxMDMwMkY2MURCMTFFNThCREY5RTc0N0M2QzkzNDMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz46yZ8AAAAJRUlEQVR42rSZ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" class="footer-corporate-portals-logo"> Otras webs de Schibsted:</li>
+                            <li><a href="http://www.fotocasa.es/" target="_blank">fotocasa.es</a></li>
+                            <li><a href="http://www.inmogeo.com/" target="_blank">inmogeo.com</a></li>
+                            <li><a href="http://www.segundamano.es/" target="_blank">segundamano.es</a></li>
+                            <li><a href="https://www.infojobs.net/" target="_blank">Infojobs.net</a></li>
+                            <li><a href="http://www.coches.net/" target="_blank">coches.net</a></li>
+                            <li><a href="http://www.milanuncios.com/" target="_blank">milanuncios.com</a></li>
+                            <li><a href="http://www.scm-re.com/" target="_blank">inmobiliaria en Europa</a></li>
+                        </ul>  
+                    </div>
+                    <div class="footer-legal">
+                        <ul class="footer-legal-items">
+                            <li>© 2015 Schibsted Classified Media Spain S.L.</li>
+                            <li><a href="http://login.inmofactory.com/Legal/Legal" target="_blank">Aviso legal</a></li>
+                            <li><a href="http://login.inmofactory.com/Legal/Legal" target="_blank">Protección de datos</a></li>
+                        </ul>
+                    </div>
+                </div>    
+            </footer>
         </div>
+
     </section>
-   <footer class="footer">
-        <div class="footer-wrapper">
-            <div class="footer-corporate">
-                <ul class="footer-corporate-portals">
-                    <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAvCAIAAAAq4N6eAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjQ0MTAzMDMwNjFEQjExRTU4QkRGOUU3NDdDNkM5MzQzIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjQ0MTAzMDMxNjFEQjExRTU4QkRGOUU3NDdDNkM5MzQzIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NDQxMDMwMkU2MURCMTFFNThCREY5RTc0N0M2QzkzNDMiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NDQxMDMwMkY2MURCMTFFNThCREY5RTc0N0M2QzkzNDMiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz46yZ8AAAAJRUlEQVR42rSZ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" class="footer-corporate-portals-logo"> Otras webs de Schibsted:</li>
-                    <li><a href="http://www.fotocasa.es/" target="_blank">fotocasa.es</a></li>
-                    <li><a href="http://www.inmogeo.com/" target="_blank">inmogeo.com</a></li>
-                    <li><a href="http://www.segundamano.es/" target="_blank">segundamano.es</a></li>
-                    <li><a href="https://www.infojobs.net/" target="_blank">Infojobs.net</a></li>
-                    <li><a href="http://www.coches.net/" target="_blank">coches.net</a></li>
-                    <li><a href="http://www.milanuncios.com/" target="_blank">milanuncios.com</a></li>
-                    <li><a href="http://www.scm-re.com/" target="_blank">inmobiliaria en Europa</a></li>
-                </ul>  
-            </div>
-            <div class="footer-legal">
-                <ul class="footer-legal-items">
-                    <li>© 2015 Schibsted Classified Media Spain S.L.</li>
-                    <li><a href="http://login.inmofactory.com/Legal/Legal" target="_blank">Aviso legal</a></li>
-                    <li><a href="http://login.inmofactory.com/Legal/Legal" target="_blank">Protección de datos</a></li>
-                </ul>
-            </div>
-        </div>    
-    </footer>
+
 
     <div class="modal" id="info">
     <a href="#" class="modal-close" data-close="info"></a>

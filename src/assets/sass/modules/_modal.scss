@@ -1,3 +1,9 @@
+.modal-form-login-container {
+    flex: 1;
+    align-items: center;
+    display: flex;
+    margin-top: 100px;
+}
 .modal-form-login-wrapper {
     min-width: 399px;
     max-width: 400px;
@@ -13,11 +19,7 @@
     }
 }
 
-
-
-
 // FORM 
-
 .lb-hide {
     background-color: #fff;    
     color: #999;
@@ -164,9 +166,16 @@
 
 //MEDIAS
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 460px){
     .modal-form-login-wrapper {
-        width: 88%;
-        min-width: 280px;
+        min-width: 299px;
+        max-width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 420px) {
+    .modal-form-login-container {
+        margin-top: 75px;
     }
 }
