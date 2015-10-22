@@ -1,0 +1,172 @@
+.modal-form-login-wrapper {
+    min-width: 399px;
+    max-width: 400px;
+    max-height: 89%;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: $grey;
+    
+    h1 {
+        font-weight: 300;
+        @include font-size($big); 
+        text-align: center;
+    }
+}
+
+
+
+
+// FORM 
+
+.lb-hide {
+    background-color: #fff;    
+    color: #999;
+}
+
+.imf-searcher_filter {
+    margin: 16px 0;
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff; 
+
+    label {
+        &.lb-hide {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 16px 8px;
+            transition: 0.3s;
+            transition: all 0.3s ease 0s;
+            line-height: 2;
+        }
+    }
+
+    input[type="text"],
+    textarea {
+        background: transparent none repeat scroll 0 0;
+        left: 0;
+        padding: 18px 12px 28px;
+        position: relative;
+        top: 0;
+        z-index: 1;
+        border: 1px solid #eaeaea;
+        box-sizing: border-box;
+        color: #333333;
+        margin: 0;
+        outline: 0;
+        text-align: left;
+        vertical-align: middle;
+        width: 100%;
+        -webkit-appearance: none; 
+    }
+
+    textarea {
+        background-color: #ffffff; 
+    }
+
+
+    input[type="text"] {
+        &:focus + label {
+            background-color: #666;
+            color: #fff;
+            font-size: 9px;
+            margin-top: -22px;
+            padding: 0 6px;
+            text-transform: uppercase;
+            top: 100%;
+            z-index: 2;
+            line-height: 2.5; 
+        }
+
+        &:valid {
+            background: #fff none repeat scroll 0 0; 
+        }
+    }
+}
+
+.imf-searcher_filter--inline {
+    background-color: transparent;
+    font-size: 13px;
+    &.lbl_remember {
+        margin-top: 16px;    
+    }    
+}
+
+.imf-searcher_button {
+  clear: both;
+  text-align: center; 
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.imf-label--required {
+    &:before {
+      content: "*";
+      color: #f00;
+      font-size: 20px;
+      padding-right: 4px;
+      position: relative;
+      top: 4px;
+      line-height: 0;         
+    }
+}
+
+.imf-col_label {
+    float: left;
+    margin-right: 2.5641%;
+    text-align: right;
+    width: 23.0769%; 
+
+    label {
+        display: inline-block;
+        padding-top: 8px; 
+    }
+}
+
+.error {
+    display: none;
+    color: red;
+}
+#rememberPassword, #rememberPassword:hover, #rememberPassword:visited  {
+    color: #2D84F2;
+    padding-left: 8px;
+}
+
+#panelRemember {
+    padding: 0 35px;
+}
+
+#forgetPassword {
+    text-indent: 6px;
+    margin-top: 0px;
+    text-align: justify;
+}
+
+//DESACTIVATE
+.remember {
+    display: none;
+}
+
+.desactive, .desactive:hover {
+    background-color: #eaeaea;
+    color: #fff;
+}
+
+.lbl_remember--desactive {
+    color: #ccc;
+}
+
+.legal {
+    font-size: 18px;
+}
+
+//MEDIAS
+
+@media screen and (max-width: 420px){
+    .modal-form-login-wrapper {
+        width: 88%;
+        min-width: 280px;
+    }
+}

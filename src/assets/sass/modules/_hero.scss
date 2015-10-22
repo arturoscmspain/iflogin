@@ -1,0 +1,23 @@
+.hero {
+	display: -webkit-box;
+  	display: -webkit-flex;
+  	display: -ms-flexbox;
+ 	display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+	background-image: url("../img/hero/bg_v01_big.jpg");
+	background-repeat:no-repeat;
+	background-position: 50% center;
+	background-size: cover;
+	max-width: 100%;
+	position: relative;
+}
+
+

@@ -1,0 +1,85 @@
+.modal {
+	position: fixed;
+	top:0; bottom:0; left: 0; right: 0;
+	background-color: rgba(0,0,0,.9);
+	z-index: 10;
+	display: none;
+	opacity: 0;
+	transition: .4s all ease-in;
+	padding: 1rem;
+	&-close {
+			position: absolute;
+			display: block;
+			top: 16px;
+			right: 16px;
+			height: 32px;
+			width: 32px;
+			text-decoration: none !important;
+			cursor: pointer;
+			text-align: center;
+			opacity: 1;
+
+				&:after {
+					content: "\00d7";
+				    font-size: 64px;
+				    color: #ccc;
+				    cursor: pointer;
+				    font-weight: 300;
+				}
+	}
+
+	&-form-wrapper {
+		max-width: 500px;
+		max-height: 85%;
+		overflow-y: auto;
+		padding: 1rem;
+		background-color: #f5f5f5;
+		margin: 0 auto;
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(10%);
+
+			h1 {
+				font-weight: 300;
+				@include font-size($big);
+			}
+
+	}
+}
+
+
+
+@media screen and (max-width: 850px) {
+	.modal-form-wrapper {
+	    background-color: #f5f5f5;
+	    padding: 1rem;
+	    transform: none;
+	    top: 0;
+	    margin: 50px auto 0;
+	}
+}
+
+.conditions {
+	font-size: 16px;
+}
+
+@media screen and (max-width: 360px) {
+    .conditions {
+		font-size: 12px;
+	}
+}
+
+.be-visible {
+  opacity: 1 !important;
+  display: block; 
+}
+
+.to-right {
+  right: 0; 
+}
+
+.to-left {
+  left: 0; 
+}
+

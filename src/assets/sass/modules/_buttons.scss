@@ -1,0 +1,32 @@
+@mixin button ($color, $background-color, $background-color--hover, $padding) {
+  @include font-size($small);
+  color: $color;
+  padding: $padding;
+  background-color: $background-color;
+  text-decoration: none;
+  margin: 1rem 0;
+  display: inline-block;
+  text-transform: uppercase;
+
+    &:hover {
+      text-decoration: none;
+      background-color: lighten($background-color--hover, 4%);
+    }
+}
+
+.button_primary, .button_primary--contact {
+  @include button (#ffffff, $blue, $blue, 1rem); 
+}
+
+.button_primary--contact {
+  @include font-size($big);
+}
+
+
+button {
+    -webkit-appearance: button;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    border: none;
+}
