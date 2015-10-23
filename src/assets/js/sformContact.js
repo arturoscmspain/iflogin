@@ -1,6 +1,6 @@
 $(document).on("ready", function () {
     
-    $(".button_primary--contact").click(function () {
+    $("#btn_contact.button_primary").click(function () {
         if(IsValidForm())
         {
             SendEmail();

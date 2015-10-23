@@ -28,14 +28,16 @@ $(document).on("ready", function (){
 
 
 	function Login(){
-		return true;
+		alert("Login");return true;
+		
 	}
 
 	function SendEmailRemember(){
-		return true;
-	}
+		alert("Remember");
+return true;
+			}
 
-	$(".button_primary").click(function(){
+	$("#formLogin .button_primary").click(function(){
 		$(".error").hide();
 		if (isValidFormLogin()) {
 			if ($("#btn_enter").prop("disabled") === false) {
@@ -50,7 +52,7 @@ $(document).on("ready", function (){
 		}
 	});
 
-	$("input").keyup(function(){
+	$("#formLogin input").keyup(function(){
 		if ($(this).val() != "") {
 			$(".error").fadeOut();
 			return false;
